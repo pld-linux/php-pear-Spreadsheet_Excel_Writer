@@ -1,17 +1,17 @@
 %include	/usr/lib/rpm/macros.php
 %define         _class          Spreadsheet
 %define         _subclass       Excel
-%define		_status		devel
+%define		_status		beta
 
 %define		_pearname	%{_class}_%{_subclass}_Writer
 Summary:	%{_pearname} - Package for generating Excel spreadsheets
 Summary(pl):	%{_pearname} - pakiet generuj±cy arkusze Excela
 Name:		php-pear-%{_pearname}
-Version:	0.1
+Version:	0.3
 Release:	1
 License:	PHP 2.02
 Group:		Development/Languages/PHP
-# Source0-md5:	cdb6d22dddb290c4acdef354a345ec71
+# Source0-md5:	32bffe9fa7f7a56bebc0e5f78164f366
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 URL:		http://pear.php.net/
 BuildRequires:	rpm-php-pearprov >= 4.0.2-98
