@@ -27,7 +27,7 @@ images (BMP) and all kinds of formatting for text and cells. It
 currently supports the BIFF5 format (Excel 5.0), so functionality
 appeared in the latest Excel versions is not yet available.
 
-This class has in PEAR status: %{_status}.
+In PEAR status of this package is: %{_status}.
 
 %description -l pl
 Spreadsheet_Excel_Writer narodzi³ siê jako port do PHP perlowego
