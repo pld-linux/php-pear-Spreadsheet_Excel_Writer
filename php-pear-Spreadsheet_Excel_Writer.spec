@@ -1,10 +1,10 @@
 %include	/usr/lib/rpm/macros.php
-%define         _class          Spreadsheet
-%define         _subclass       Excel
+%define		_class		Spreadsheet
+%define		_subclass	Excel
 %define		_status		beta
-
 %define		_pearname	%{_class}_%{_subclass}_Writer
-Summary:	%{_pearname} - Package for generating Excel spreadsheets
+
+Summary:	%{_pearname} - package for generating Excel spreadsheets
 Summary(pl):	%{_pearname} - pakiet generuj±cy arkusze Excela
 Name:		php-pear-%{_pearname}
 Version:	0.7
