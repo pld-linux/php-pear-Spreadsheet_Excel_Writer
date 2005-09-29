@@ -8,13 +8,13 @@ Summary:	%{_pearname} - package for generating Excel spreadsheets
 Summary(pl):	%{_pearname} - pakiet generuj±cy arkusze Excela
 Name:		php-pear-%{_pearname}
 Version:	0.8
-Release:	2
+Release:	2.1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	4a5354e3fbd5deb2d826bcbcd4e7295d
 URL:		http://pear.php.net/package/Spreadsheet_Excel_Writer/
-BuildRequires:	rpm-php-pearprov >= 4.0.2-98
+BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -40,22 +40,22 @@ ostatnich wersji Excela nie jest jeszcze dostêpna.
 Ta klasa ma w PEAR status: %{_status}.
 
 %prep
-%setup -q -c
+%pear_package_setup
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Writer
-
-install %{_pearname}-%{version}/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}
-install %{_pearname}-%{version}/Writer/*.php $RPM_BUILD_ROOT%{php_pear_dir}/%{_class}/%{_subclass}/Writer/
+install -d $RPM_BUILD_ROOT%{php_pear_dir}
+%pear_package_install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc install.log
 %dir %{php_pear_dir}/%{_class}/
 %dir %{php_pear_dir}/%{_class}/%{_subclass}
 %dir %{php_pear_dir}/%{_class}/%{_subclass}/Writer
+%{php_pear_dir}/.registry/*.reg
 %{php_pear_dir}/%{_class}/%{_subclass}/*.php
 %{php_pear_dir}/%{_class}/%{_subclass}/Writer/*.php
