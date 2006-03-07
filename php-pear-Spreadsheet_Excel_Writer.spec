@@ -14,6 +14,7 @@ Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
 # Source0-md5:	4a5354e3fbd5deb2d826bcbcd4e7295d
 URL:		http://pear.php.net/package/Spreadsheet_Excel_Writer/
+BuildRequires:	php-pear-PEAR
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
 Requires:	php-pear
 Requires:	php-pear-OLE >= 0.5
