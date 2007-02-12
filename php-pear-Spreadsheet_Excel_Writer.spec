@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Writer
 
 Summary:	%{_pearname} - package for generating Excel spreadsheets
-Summary(pl):	%{_pearname} - pakiet generuj±cy arkusze Excela
+Summary(pl.UTF-8):   %{_pearname} - pakiet generujÄ…cy arkusze Excela
 Name:		php-pear-%{_pearname}
 Version:	0.9.1
 Release:	1
@@ -33,13 +33,13 @@ appeared in the latest Excel versions is not yet available.
 
 In PEAR status of this package is: %{_status}.
 
-%description -l pl
-Spreadsheet_Excel_Writer narodzi³ siê jako port do PHP perlowego
-modu³u Spreadsheet::WriteExcel. Pozwala na zapisywanie arkuszy Excela
-bez potrzeby u¿ywania obiektów COM. Ma wsparcie dla formularzy,
-rysunków (BMP) oraz wszelkiego typu formatowania tekstu oraz komórek.
-Aktualnie wspiera format BIFF5 (Excel 5.0), wiêc funkcjonalno¶æ
-ostatnich wersji Excela nie jest jeszcze dostêpna.
+%description -l pl.UTF-8
+Spreadsheet_Excel_Writer narodziÅ‚ siÄ™ jako port do PHP perlowego
+moduÅ‚u Spreadsheet::WriteExcel. Pozwala na zapisywanie arkuszy Excela
+bez potrzeby uÅ¼ywania obiektÃ³w COM. Ma wsparcie dla formularzy,
+rysunkÃ³w (BMP) oraz wszelkiego typu formatowania tekstu oraz komÃ³rek.
+Aktualnie wspiera format BIFF5 (Excel 5.0), wiÄ™c funkcjonalnoÅ›Ä‡
+ostatnich wersji Excela nie jest jeszcze dostÄ™pna.
 
 Ta klasa ma w PEAR status: %{_status}.
 
