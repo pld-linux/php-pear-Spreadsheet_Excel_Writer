@@ -5,7 +5,7 @@
 %define		_pearname	%{_class}_%{_subclass}_Writer
 
 Summary:	%{_pearname} - package for generating Excel spreadsheets
-Summary(pl.UTF-8):   %{_pearname} - pakiet generujący arkusze Excela
+Summary(pl.UTF-8):	%{_pearname} - pakiet generujący arkusze Excela
 Name:		php-pear-%{_pearname}
 Version:	0.9.1
 Release:	1
