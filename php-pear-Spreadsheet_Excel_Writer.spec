@@ -4,13 +4,12 @@
 Summary:	%{_pearname} - package for generating Excel spreadsheets
 Summary(pl.UTF-8):	%{_pearname} - pakiet generujący arkusze Excela
 Name:		php-pear-%{_pearname}
-Version:	0.9.3
-Release:	4
+Version:	0.9.4
+Release:	1
 License:	LGPL
 Group:		Development/Languages/PHP
 Source0:	http://pear.php.net/get/%{_pearname}-%{version}.tgz
-# Source0-md5:	a1c353beb819fa4b7146f5325625774b
-Patch0:		%{name}-git.patch
+# Source0-md5:	ac3355bd8c5eddac6b1feee78a7fe5c6
 URL:		http://pear.php.net/package/Spreadsheet_Excel_Writer/
 BuildRequires:	php-pear-PEAR >= 1:1.4.0-0.b1
 BuildRequires:	rpm-php-pearprov >= 4.4.2-11
@@ -43,8 +42,6 @@ Ta klasa ma w PEAR status: %{_status}.
 
 %prep
 %pear_package_setup
-cd ./%{php_pear_dir}
-%patch0 -p1
 
 %install
 rm -rf $RPM_BUILD_ROOT
