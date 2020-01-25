@@ -1,6 +1,5 @@
 %define		_status		beta
 %define		_pearname	Spreadsheet_Excel_Writer
-%include	/usr/lib/rpm/macros.php
 Summary:	%{_pearname} - package for generating Excel spreadsheets
 Summary(pl.UTF-8):	%{_pearname} - pakiet generujący arkusze Excela
 Name:		php-pear-%{_pearname}
